@@ -1,0 +1,199 @@
+/* Đặt font chung cho toàn bộ trang, loại bỏ margin và padding mặc định, và áp dụng box-sizing cho toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Đặt màu nền cho header */
+header {
+  background-color: #e6e6fa;
+  padding: 10px 0;
+}
+
+/* Sử dụng Flexbox để căn chỉnh các phần tử trong thanh top-bar */
+.top-bar {
+  display: flex;
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  justify-content: space-between; /* Đặt khoảng cách đều giữa các phần tử */
+  padding: 0 20px; /* Đệm xung quanh các phần tử */
+  background-color: #f8f8f8; /* Màu nền của thanh top-bar */
+}
+
+/* Đặt flex: 1 để phần tử marquee chiếm đủ không gian cần thiết và không gây xuống dòng */
+.address {
+  flex: 1;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Sử dụng Flexbox để căn chỉnh các liên kết trong div.contact */
+.contact {
+  display: flex;
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các liên kết */
+}
+
+/* Đặt thuộc tính cho các liên kết trong div.contact */
+.contact a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+  color: #000; /* Đặt màu chữ của liên kết */
+}
+
+/* Sử dụng Flexbox để căn chỉnh các phần tử trong header-content */
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Đặt khoảng cách đều giữa các phần tử */
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  padding: 10px 20px; /* Đệm xung quanh các phần tử */
+  flex-wrap: wrap; /* Cho phép xuống dòng nếu không đủ chỗ */
+}
+
+/* Đặt chiều cao cho logo */
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Sử dụng Flexbox cho hộp tìm kiếm và căn chỉnh các phần tử bên trong */
+.search-box {
+  display: flex;
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  background: #f2f2f2; /* Đặt màu nền cho hộp tìm kiếm */
+  border-radius: 20px; /* Bo tròn góc của hộp tìm kiếm */
+  overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+  max-width: 400px; /* Đặt chiều rộng tối đa cho hộp tìm kiếm */
+  width: 100%; /* Đặt chiều rộng của hộp tìm kiếm chiếm 100% không gian có sẵn */
+  margin: 0 20px; /* Đệm ngang cho hộp tìm kiếm */
+}
+
+/* Đặt thuộc tính cho ô input trong hộp tìm kiếm */
+.search-box input {
+  flex: 1; /* Chiếm toàn bộ không gian có sẵn */
+  padding: 10px; /* Đệm xung quanh chữ */
+  border: none; /* Loại bỏ viền */
+  outline: none; /* Loại bỏ đường viền khi chọn */
+  background: none; /* Đặt nền trong suốt */
+  font-size: 16px; /* Đặt kích thước chữ */
+}
+
+/* Đặt thuộc tính cho nút bấm trong hộp tìm kiếm */
+.search-box button {
+  width: 40px;
+  height: 40px;
+  border: none; /* Loại bỏ viền */
+  background: #333; /* Đặt màu nền */
+  color: #fff; /* Đặt màu chữ */
+  border-radius: 50%; /* Bo tròn góc */
+  cursor: pointer; /* Đặt kiểu con trỏ */
+}
+
+/* Sử dụng Flexbox để căn chỉnh các liên kết trong nav.main-nav */
+.main-nav {
+  display: flex;
+  gap: 15px; /* Khoảng cách giữa các liên kết */
+  flex-wrap: wrap; /* Cho phép xuống dòng nếu không đủ chỗ */
+}
+
+/* Đặt thuộc tính cho các liên kết trong nav.main-nav */
+.main-nav a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+  color: #000; /* Đặt màu chữ của liên kết */
+}
+
+/* Đặt màu chữ và căn giữa tiêu đề h1 */
+.red {
+  color: red;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.redsdt {
+  color: red;
+}
+
+/* Sử dụng Flexbox để căn chỉnh các phần tử trong container */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Đặt các phần tử xuống dòng khi không đủ không gian */
+  justify-content: space-around; /* Đặt khoảng cách đều giữa các phần tử */
+  padding: 20px; /* Đệm xung quanh các phần tử */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Đặt thuộc tính cho các hộp sản phẩm */
+.box {
+  flex: 1 1 calc(25% - 20px); /* Đặt chiều rộng của hộp sản phẩm */
+  text-align: center; /* Căn giữa chữ */
+  margin-bottom: 20px; /* Đệm dưới cho các hộp sản phẩm */
+  max-width: calc(25% - 20px); /* Đảm bảo chiều rộng tối đa */
+  box-sizing: border-box;
+}
+
+/* Đặt thuộc tính cho hình ảnh trong hộp sản phẩm */
+.box img {
+  width: 100%; /* Đặt chiều rộng của hình ảnh chiếm 100% không gian có sẵn */
+  height: auto; /* Đặt chiều cao tự động theo tỷ lệ hình ảnh */
+}
+
+/* Đặt màu chữ cho giá sản phẩm */
+.gia {
+  color: red;
+}
+
+/* Đặt màu chữ cho giá cũ của sản phẩm */
+.giacu {
+  color: gray;
+}
+
+/* Đặt thuộc tính cho hộp sản phẩm */
+.box {
+  width: calc(25% - 20px); /* Đặt chiều rộng của hộp sản phẩm */
+  text-align: center; /* Căn giữa chữ */
+  margin-bottom: 20px; /* Đệm dưới cho các hộp sản phẩm */
+  position: relative; /* Đặt vị trí tương đối để sử dụng absolute */
+}
+
+/* Đặt thuộc tính cho nút "Thêm vào giỏ hàng" */
+.add-to-cart {
+  position: absolute; /* Đặt vị trí tuyệt đối để điều khiển */
+  bottom: -30px; /* Đặt khoảng cách từ dưới lên 10px */
+  left: 50%; /* Đặt nút ở giữa theo chiều ngang */
+  transform: translateX(-50%); /* Dịch chuyển nút về trái 50% của chính nó */
+  display: block;
+  width: 150px; /* Đặt chiều rộng */
+  padding: 8px; /* Đặt đệm bên trong */
+  background-color: #00ff55; /* Đặt màu nền */
+  color: #fff; /* Đặt màu chữ */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Bo tròn góc */
+  cursor: pointer; /* Đặt kiểu con trỏ */
+  text-align: center; /* Căn giữa chữ */
+  font-size: 14px; /* Đặt kích thước chữ */
+}
+
+/* Hover style cho nút "Thêm vào giỏ hàng" */
+.add-to-cart:hover {
+  background-color: #e64a19; /* Màu nền khi hover */
+}
+
+/* Đặt thuộc tính chung cho các liên kết */
+a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+  margin: 5px; /* Đệm cho liên kết */
+}
+main {
+  background-color: #e5f0e9;
+}
+.address {
+  background-color: rgb(156, 153, 155);
+  display: flex;
+}
+.address h3 {
+  text-align: left;
+}
+.contact :hover {
+  background-color: #1c87c5;
+  border-radius: 15px;
+}
